@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>智慧家居-美好生活 居家設備輕鬆掌握</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+	<style>
+		#p1,#p2,#p3{
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 75vh;
+		}
+		#p1{
+			background-image: url('images/p1.png');
+		}
+		#p2{
+			background: url('images/p2.png');
+		}
+		#p3{
+			background: url('images/p3.jpg');
+		}
+		.bgColor{
+			background-color: rgba(255,255,255,0.9);
+		}
+	</style>
+</head>
+<body>
+	<!-- 導覽列 -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+		<h1 class="navbar-brand">智慧家居</h1>		
+		<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="menu">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a href="#" class="nav-link">首頁</a></li>
+				<li class="nav-item"><a href="#sideBar" class="nav-link" data-bs-toggle="offcanvas">設備管理</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">功能設定</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- 側邊滑動選單 -->
+	<div class="offcanvas offcanvas-start bgColor" id="sideBar">
+		<div class="offcanvas-header">
+			<h1 class="text-info text-center">設備選單</h1>
+			<button class="btn-close" data-bs-dismiss="offcanvas"></button>
+		</div>
+		<div class="offcanvas-body">
+			<ul class="list-group">
+				<li class="list-group-item list-group-item-secondary list-group-item-action" data-bs-toggle="tooltip" title="控制客廳燈光">燈光</li>
+				<li class="list-group-item list-group-item-secondary list-group-item-action" data-bs-toggle="tooltip" title="控制冷氣與溫度">空調</li>
+				<li class="list-group-item list-group-item-secondary list-group-item-action" data-bs-toggle="tooltip" title="查看門鎖狀態">門鎖</li>
+				<li class="list-group-item list-group-item-secondary list-group-item-action" data-bs-toggle="tooltip" title="即時影像監控">攝影機</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container my-4">
+		<!-- 輪播照片廣告 -->
+		<div class="row">
+			<div class="col p-0">
+				<div class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" id="cf">
+					<div class="carousel-inner">
+						<div class="carousel-item active" id="p1"></div>
+						<div class="carousel-item" id="p2"></div>
+						<div class="carousel-item" id="p3"></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- 資訊狀態卡片效果 -->
+	<div class="container my-5">
+		<div class="row g-3">
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">空調 <span class="badge h6 bg-success">啟動</span></h5>
+						<p class="card-text">目前溫度:26.5&#8451;</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-body pb-4">
+						<h5 class="card-title">燈光 <span class="spinner-border spinner-border-sm text-warning"></span></h5>
+						<p class="card-text">目前狀態:開啟中</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">門鎖 <span class="badge bg-secondary h6">已上鎖</span></h5>
+						<p class="card-text">最後操作:5分鐘前</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 控制表單 -->
+	<div class="container my-5">
+		<h4>設備控制表單</h4>
+		<form action="">
+			<div class="row g-3">
+				<div class="col-md-4">
+					<label for="" class="form-label">選擇設備</label>
+					<select class="form-select">
+						<option selected disabled>請選擇</option>
+						<option value="燈光">燈光</option>
+						<option value="空調">空調</option>
+						<option value="門鎖">門鎖</option>
+					</select>
+				</div>
+				<div class="col-md-4">
+					<label for="" class="form-label">控制值</label>
+					<input type="text" class="form-control" placeholder="如:開 / 25&#8451;">
+				</div>
+				<div class="col-md-4 d-flex align-items-end">
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmArea">送出</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<!-- 表單送出的回應區塊 -->
+	<div class="modal fade" id="confirmArea">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">控制結果</h5>
+					<button class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+				<div class="modal-body text-center">
+					<p class="display-4 text-success">操作已成功送出!</p>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 若有要設計提示框 可以不使用jQuery來使其有效果 -->
+<script>
+	const toolTipAll=[].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+	toolTipAll.forEach(t=>new bootstrap.Tooltip(t))
+</script>
+</body>
+</html>

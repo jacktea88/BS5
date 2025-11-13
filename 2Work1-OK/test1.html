@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 一、快鍵：meta:vp -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>如何使用Bbootstrap</title>
+	<!-- 快鍵：link:css -->
+	<link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+	<!-- 快鍵：script:src -->
+	<script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col">testing!</div>
+		</div>
+	</div>
+	<!-- 雖然是滿版，但左右還是有一點空間 -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam cumque omnis consequatur, laudantium velit quia animi iste. Quam perferendis accusamus ab blanditiis quas nisi necessitatibus dolorem iste sunt voluptas rem inventore dolor ipsa pariatur temporibus quae, veniam, eos earum natus eveniet aperiam quos ducimus rerum. Placeat sequi fuga ea nostrum.</div>
+		</div>
+	</div>
+	<!-- 三、三欄均分加顏色 -->
+	<!-- .container>.row>.col*3 -->
+	<div class="container">
+		<div class="row">
+			<div class="col-3 bg-primary">123</div>
+			<div class="col-9 bg-success">123</div>
+			<div class="col-3 bg-warning">123</div>
+		</div>
+	</div>
+	
+</body>
+</html>
+<!-- 
+學習重點:
+如何連結Bootstrap相關檔案?
+*使用檔案連結?自官網下載至本機網站資料夾中
+*使用內容網路連結-CDN?自官網複製連結
+ -->
