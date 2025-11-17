@@ -122,7 +122,12 @@
 					<input type="text" class="form-control" placeholder="如:開 / 25&#8451;">
 				</div>
 				<div class="col-md-4 d-flex align-items-end">
+					<!-- 送出按鈕 注意要加type="button" 沒加的話就會執行表單送出，就不會出現彈出框-->
 					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmArea">送出</button>
+					<!-- 加type="button" 的結果-->
+					<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmArea">送出</button>
+					<!-- 也可用<a></a>就不用加type="button" -->
+					<a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmArea">送出</a>
 				</div>
 			</div>
 		</form>
@@ -148,8 +153,32 @@
 
 	<!-- 若有要設計提示框 可以不使用jQuery來使其有效果 -->
 <script>
-	const toolTipAll=[].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-	toolTipAll.forEach(t=>new bootstrap.Tooltip(t))
+	// const toolTipAll=[].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+	// toolTipAll.forEach(t=>new bootstrap.Tooltip(t))
+
+	// 選擇所有具有 data-bs-toggle="tooltip" 屬性的元素
+	const toolTipAll = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+
+	// 對於每個元素，創建一個新的 bootstrap.Tooltip 實例
+	toolTipAll.forEach((element) => {
+  		new bootstrap.Tooltip(element);
+	});
 </script>
 </body>
 </html>
+
+<!-- 一些常用的符號：
+&times;：乘法符號
+&divide;：除法符號
+&plusmn;：正負符號
+&sup2;：平方符號
+&sup3;：立方符號
+&rarr;：右箭頭符號
+&mdash;：連字符號
+&gt;：大於符號
+&lt;：小於符號
+&copy;：版權符號
+&reg;：註冊符號
+&yen;：圓元符號
+&euro;：歐元符號 
+-->
