@@ -14,11 +14,40 @@
     />
 
     <title>BS-組件組合-載入動畫</title>
+    <style>
+      .my-Spinnert {
+        width: 24px;
+        height: 24px;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col"></div>
+        <div class="col">
+          <!-- 旋轉 -->
+          <div class="spinner-border text-info">
+            <span class="visually-hidden">loading...</span>
+          </div>
+          <!-- 圓球變大 -->
+          <div class="spinner-grow text-success">
+            <span class="visually-hidden">loading...</span>
+          </div>
+          <!-- 小型旋轉 -->
+          <div class="spinner-border spinner-border-sm text-warning">
+            <span class="visually-hidden">loading...</span>
+          </div>
+          <!-- 自訂大小 -->
+          <div class="spinner-border my-Spinnert text-info">
+            <span class="visually-hidden">loading...</span>
+          </div>
+          <!-- 按鈕型式 -->
+          <button class="btn btn-warning">
+            <span class="spinner-border spinner-border-sm text-danger"></span>Loading
+            <span class="visually-hidden">Loading...</span>
+          </button>
+
+        </div>
       </div>
     </div>
 
