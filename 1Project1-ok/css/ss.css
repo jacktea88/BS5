@@ -59,8 +59,12 @@ div form textarea{/*div區塊標籤底下的表單多行文字欄位*/
 	resize: none;/*取消調整尺寸功能*/
 }
 #btn{/*id代號為btn的HTML標籤*/
-	width: 120px;/*寬度*/
-	height: 40px;/*高度*/
+	width: 60px;/*寬度*/
+	height: 30px;/*高度*/
+	background-color: rgba(0, 0, 0, 0.817);
+	color: white;/*文字色彩*/
+	border: none;/*取消邊框*/
+	text-align: center;/*文字水平居中對齊*/
 }
 footer{/*語意標籤footer*/
 	height: 100px;/*高度*/
@@ -69,8 +73,9 @@ footer{/*語意標籤footer*/
 	text-align: center;/*內容水平置中對齊*/
 }
 #footerArea{
-	width:100%;
+	width: 100%;
 	background:lightgray;
+	
 }
 #footerArea div:nth-child(2){
 	text-align:right;
