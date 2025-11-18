@@ -1,0 +1,56 @@
+
+
+#MENU {
+	width:1000px;
+	height:260px;
+	margin:0 auto;
+	text-align: center;
+}
+#MENU ul {
+	width:99%;
+	height:160px;
+	margin:0 auto;
+	overflow:hidden;
+	list-style: none;
+	padding-left:1%;
+
+}
+#MENU li {
+	float:left;
+	margin-right:3px;
+	margin-top:50px;
+	margin-left:1px;
+}
+#MENU li a {
+	display:block;
+	width:160px;
+	height:160px;
+	text-indent:-9999px;	
+}
+#MENU li.css a {
+	background-image:url(../images/bt_css.gif);
+}
+#MENU li.dreamweaver a {
+	background-image:url(../images/bt_dreamweaver.gif);
+}
+#MENU li.flash a {
+	background-image:url(../images/bt_flash_adv.gif);
+}
+#MENU li.js a {
+	background-image:url(../images/course_javascript.gif);
+}
+#MENU li.css3 a {
+	background-image:url(../images/course_css3.gif);
+}
+#MENU li.photoshop a {
+	background-image:url(../images/bt_photoshop2.gif);
+}
+
+
+#MENU h1 {
+	width:1000px;
+	height:100px;
+	text-align: center;
+	line-height: 100px;`
+
+}

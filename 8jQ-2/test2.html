@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>使用 attr(); 抓取並控制 HTML 標籤的屬性</title>
+<link href="css/layout.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+	$(function () {
+    $("#SS1,#SS2,#SS3,#SS4").hover(function () {
+        // over
+        // $(this).attr("src");
+        // alert($(this).attr("src"));
+        let smallSrc=$(this).attr("src");
+        $("#BIG").attr("src", smallSrc);
+      }, function () {
+        // out
+      }
+    );
+  });
+</script>
+
+
+
+</head>
+
+<body>
+
+<h1>車輛展示</h1>
+<hr>
+
+<div id="BOX">
+
+  <div id="SMALL">
+   	  <img src="images/small1.jpg" width="120" height="100" id="SS1">
+      <img src="images/small2.jpg" width="120" height="100" id="SS2">
+      <img src="images/small3.jpg" width="120" height="100" id="SS3">
+      <img src="images/small4.jpg" width="120" height="100" id="SS4">
+  </div>
+    
+	<img src="images/big.jpg" width="550" height="450" id="BIG">
+
+</div>
+
+
+
+</body></html>

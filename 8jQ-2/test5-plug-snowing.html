@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery外掛3-下雪效果</title>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.snow.js"></script>
+<script>
+	$(function () {
+		$("body").snow()
+	});
+</script>
+<style>
+	body{
+		background-color: darkgreen;
+		overflow: hidden;
+	}
+	#flake{
+		animation: snowRotate 20s;
+	}
+	@keyframes snowRotate{
+		from{transform: rotate(0deg);}
+		to{transform: rotate(360deg);}
+	}
+	
+</style>
+</head>
+<body>
+	<p>
+		Not only did thinking of themselves as eccentric give students a creative boost, but thinking of themselves as rigid became an impediment to creativity. <br>
+學生不但認為自己與別人不同 ，能夠更有創意，認為自己古板也會阻礙創意的產生。
+
+</p>
+
+</body>
+</html>

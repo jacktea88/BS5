@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQ基本引用</title>
+	<style>
+		body{
+			background-color: #633;
+			margin: 0px;
+			padding: 0px;
+			font-family: microsoft jhengHei;
+			background-image: url('images/pic_bg.jpg');
+			background-position: center top;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		h3{
+			color: #ff0;
+			width: 95%;
+			margin: 150px auto;
+			background-color:#360;
+			height: 50px;
+			line-height: 50px;
+			border-radius: 50px;
+			text-align: center;
+			letter-spacing: 1px;
+		}
+	</style>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script>
+		// $(document).ready(function(){})
+		$(function(){
+			$("h3 span").click(function(){
+				$("h3").hide()
+			})
+
+		})
+	</script>
+
+</head>
+
+<body>
+<h3>歡迎來到本站，站內所有資源均來自網站，若有任何疑問，敬請來信通知!<span>關閉</span></h3>
+
+</body>
+</html>
+<!-- 
+	jQuery的基本語法是很重要的!
+	$().()
+	基本語法中的$()就是代表要對頁面元素進行變化
+ -->

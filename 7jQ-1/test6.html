@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>綜合練習-選單設計</title>
+    <style>
+      body {
+        background-color: #363;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+      }
+	  /* .topList {
+		width: 200px;
+		margin: 0px auto;
+
+	  } */
+      .subItem {
+        width: 200px;
+        background-color: lightcyan;
+        height: 300px;
+        border-radius: 0px 0px 8px 8px;
+        margin: 0px auto;
+        padding-top: 15px;
+      }
+      .subItem a {
+        display: block;
+        letter-spacing: 2px;
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-decoration: none;
+      }
+      .subItem a:hover {
+      }
+      h1 {
+        margin-bottom: 0px;
+        background-color: lightcyan;
+        border-radius: 8px 8px 8px 8px;
+        margin: 0px auto;
+        width: 200px;
+      }
+    </style>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+      $(function () {
+        $(".subItem").hide();
+		$("h1").hover(function () {
+				// over
+				
+			}, function () {
+				// out
+			}
+		);
+        // $("h1").click(function (e) {
+        //   $(".subItem").slideDown(200);
+        //   $(this).css("border-radius", "8px 8px 0px 0px");
+        // });
+        $("#closeMenu").click(function (e) {
+          $(".subItem").hide();
+          $("h1").css("border-radius", "8px 8px 8px 8px");
+        });
+		
+// $(".topList").hover(function () {
+$("h1").hover(function () {  
+		// over
+    // $("h1").css("border-radius", "8px 8px 0px 0px");
+		$(".subItem").slideDown(300);
+    $("h1").css("border-radius", "8px 8px 0px 0px");
+	}, function () {
+		// out
+    $("h1").css("border-radius", "8px 8px 8px 8px");
+		$(".subItem").hide();
+    // $("h1").css("border-radius", "8px 8px 8px 8px");
+	}
+);
+
+      });
+    </script>
+  </head>
+
+  <body>
+    <h2>設計出不錯的選單效果-垂直選單</h2>
+    <hr />
+    <div class="topList" id="List">
+      <h1>優質網站</h1>
+      <div class="subItem">
+        <a href="http://www.egopop.net/" target="_blank">egopop</a>
+        <a href="http://www.itosieceni.pl/" target="_blank">itosieceni</a>
+        <a href="https://www.gogoro.com/tw/" target="_blank">gogoro</a>
+        <a href="#" id="closeMenu">&times;</a>
+      </div>
+    </div>
+  </body>
+</html>

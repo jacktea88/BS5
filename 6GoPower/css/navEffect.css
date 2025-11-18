@@ -1,0 +1,13 @@
+    	.navBg{
+    		background-color: rgba(0, 0, 0, 0.3);
+            transition: all 0.8s;
+    	}
+    	.navBg:hover{
+    		background-color: rgba(0, 0, 0, 0.8);
+    	}
+    	body{
+    		background-color: #000;
+    	}
+    	.subTitle{
+    		font-size: 0.70em;
+    	}
