@@ -79,6 +79,9 @@ footer{/*語意標籤footer*/
 }
 #footerArea div:nth-child(2){
 	text-align:right;
+	/* 垂直置底 */
+	vertical-align: middle;
+	
 }
 /*平板裝置時 將影像顯示成兩欄*/
 @media screen and (min-width:768px) and (max-width: 1024px){
