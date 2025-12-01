@@ -78,7 +78,7 @@
             <a href="about.html" class="nav-link">關於我們</a>
           </li>
           <li class="nav-item">
-            <a href="info.html" class="nav-link">課程資訊</a>
+            <a href="intro.html" class="nav-link">課程資訊</a>
           </li>
         </ul>
       </div>
@@ -87,13 +87,13 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 d-flex justify-content-center align-items-center vh-100">
-          <!-- 			<a href="https://forms.gle/ZEmJzrbYYjGVKrK6A" target="_blank"> -->
+          <!-- <a href="https://forms.gle/ZEmJzrbYYjGVKrK6A" target="_blank"> -->
           <!-- div>h1+p -->
-          <div class="btn btn-danger text-white rounded border border-write pta">
-            <h1 class="text-white h3">暑期優惠大放送</h1>
-            <p class="border-bottom border-bottom-white text-warning">馬上體驗14天極致課程</p>
-          </div>
-          <!--       </a> -->
+            <div class="btn btn-danger text-white rounded border border-write pta" onclick="golink()">
+              <h1 class="text-white h3">暑期優惠大放送</h1>
+              <p class="border-bottom border-bottom-white text-warning">馬上體驗14天極致課程</p>
+            </div>
+          <!-- </a> -->
         </div>
       </div>
     </div>
@@ -117,7 +117,6 @@
       });
     </script>
     
-  </body>
 
   <!-- 動態資訊框 -->
     <div class="modal fade" id="cf">
@@ -131,10 +130,76 @@
         </div>
       </div>
     </div>
+  <!-- 警告動態資訊框 -->
+    <div class="modal fade" id="warning">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content rounded">
+          <div class="modal-body m-0 p-1">
+            <div class="ratio ratio-16x9 rounded">
+              <img src="images/warning.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script>
       window.addEventListener("load", function () {
         let cf = new bootstrap.Modal(document.querySelector("#cf"));
-        cf.show();
+        // cf.show();
       })
+      function golink(){
+        window.open(
+          "https://forms.gle/ZEmJzrbYYjGVKrK6A",
+          "form",  //視窗名稱，雙引號一定要有，裏面內容可給可不給，因看不到
+          "width=500 height=900" //視窗大小，不須給px
+        );
+      }
+
+      // move to js/ctrl.js
+      // //use javascript to stop right click
+      // document.oncontextmenu = function () {
+      //   showWarning();
+      //   return false;
+      // };
+
+      // function showWarning() {
+      //   let warning = new bootstrap.Modal(document.querySelector("#warning"));
+      //   warning.show();
+      // }
+
+      // //use javascript to stop ctrl + u & F12
+      // document.onkeydown = function (e) {
+      //   if (e.keyCode == 17 || e.keyCode == 85 || e.keyCode == 123) {
+      //     showWarning();
+      //     return false;
+      //   } else {
+      //     return true;
+      //   }
+      // };
+
+      // JQuery防止按鍵ctrl + u 或 f12
+        // $(function(){
+        //   document.onkeydown=function(e){
+        //     // alert(e.keyCode) //測試key down時此行要記得mark
+        //     if(e.keyCode===17 || e.keyCode===85|| e.keyCode===123){
+        //       // alert("禁止使用瀏覽器快捷鍵");
+        //       return false;
+        //     }else{
+        //       return true;
+        //     }
+        //   }
+        //   // 禁止右鍵
+        //   $("body").on("contextmenu",function(){
+        //     $("#warning").modal("show");
+        //     return false;
+        //   })
+        // })
+
     </script>
+
+    <script src="js/ctrl.js"></script>
+    
+  </body>
+
 </html>
