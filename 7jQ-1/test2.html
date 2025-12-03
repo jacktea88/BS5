@@ -1,53 +1,23 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>jQ基本互動效果-按鈕按下可以變更頁面背景影像</title>
-	<style>
-		body{
-			background-image: url('images/bg1.jpg');
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-attachment: fixed;
-		}
-	</style>
-	<script src="js/jquery-3.6.0.js"></script>
-	<script type="text/javascript">
-	// 	$(function () {
+<meta charset="utf-8">
+<title>jQ基本互動效果-按鈕按下可以變更頁面背景影像</title>
+<style>
+	body{
+		background-image: url('images/bg1.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+</style>
 
-	// 	$("#b1").click(function () {
-	// 		// body...
-	// 		$("body").css({"background-image":"url('images/bg2.jpg')"})
-	// 	})
-	// })
-
-
-
-	picList=["bg2.jpg","bg3.jpg","bg4.gif"]
-	alert[picList]
-	$(function () {
-		$("#b1,#b2,#b3").click(function function_name(argument) {
-			alert("hello")
-			kk=$(this).attr("id").charAt(1)
-			// alert(kk)
-			tt="url('images/"+picList[kk-1]+"')"
-				// alert(tt)
-				$("body").css({"background-image":tt})
-
-			}) 
-
-	})
-
-
-  
-</script>
 </head>
 
 <body>
 	<h2>按鈕按下時變更頁面背景影像</h2>
-	<input type="button" value="背景1" id="b1">
-	<input type="button" value="背景2" id="b2">
-	<input type="button" value="背景3" id="b3">    
+	<input type="button" value="背景1">
+	<input type="button" value="背景2">
+	<input type="button" value="背景3">    
 	<hr>
 </body>
 </html>

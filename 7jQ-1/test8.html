@@ -42,25 +42,11 @@ body{
 }
 
 </style>
-<script src="js/jquery-3.6.0.js"></script>
-<script>
-  $(function () {
-    // $("#cf span").hide();
-    $("#cf span").css("opacity", "0");
-    setTimeout(showSpan,3000)
-    function showSpan(){
-      $("#cf span").fadeIn('slow').css("opacity","1");
-    }
-    $("#cf span").click(function (e) { 
-$("#cf").fadeOut("fast");      
-    });
-  });
-  
-</script>
+
 </head>
 
 <body>
-<div id="cf">點我拿好康<span>&times;</span></div>
+<div id="cf">點我拿好康</div>
 
 </body>
 </html>

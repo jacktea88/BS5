@@ -15,7 +15,7 @@
 	<script>
 		$(function(){
 			// $("#b1").click(function(){
-			// 	$("body").css({"background-image":"url('images/bg2.jpg')"})
+				$("body").css({"background-image":"url('images/bg2.jpg')"})
 			// })
 			// $("#b2").click(function(){
 			// 	$("body").css({"background-image":"url('images/bg3.jpg')"})
@@ -23,14 +23,25 @@
 			// $("#b3").click(function(){
 			// 	$("body").css({"background-image":"url('images/bg4.gif')"})
 			// })
+
+			//簡化的寫法
 			picList=["bg2.jpg","bg3.jpg","bg4.gif"]
-			// alert(picList[2])
+			// alert(picList[2])	//測試陣列內容是否正常
 			$("#b1,#b2,#b3").click(function(){
 				kk=$(this).attr("id").charAt(1)
+				// alert(kk)	//確認kk內容為1,2,3
 				// console.log(kk)
 				tt="url(images/"+picList[kk-1]+")"
-				//alert(tt)
+				// tt="url('images/'+picList[0]+')'"
+				// alert(tt)
+				// console.log(tt)
 				$("body").css({"background-image":tt})
+				
+				//推導過程
+				// $("body").css({"background-image":"url('images/bg4.gif')"})
+				//用陣列的內容替換
+				// $("body").css({"background-image":"url('images/'+picList[0]+')'"})
+
 			})
 		})
 	</script>

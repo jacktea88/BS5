@@ -17,13 +17,14 @@
 	<script>
 		$(function(){
 			$("#b1").click(function(){
-				$("img").fadeIn().fadeTo(1000,1)
+				// $("img").fadeIn()
+				$("img").fadeIn().fadeTo(1000,1)	//搭配fadeTo要設還原的效果
 			})
 			$("#b2").click(function(){
 				$("img").fadeOut()
 			})
 			$("#b3").click(function(){
-				$("img").fadeTo(1000,0.5)
+				$("img").fadeTo(1000,0.5)	//設定透明度，但效果會一直存在
 			})
 			$("#b4").click(function(){
 				$("img").fadeToggle().fadeTo(1000,1)
