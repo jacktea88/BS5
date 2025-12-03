@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>透過基本語法實現不同的照片展示自動切換播放</title>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("img").css({
+				"position":"absolute",
+				"left":"100%"
+			})
+			$("#img1").css("left","0")
+			setTimeout(show2,3000)
+			function show1(){
+				$("#img2").css({"left":"100%"})
+				$("#img1").animate({"left":"0"},2000)
+				$("#img3").animate({"left":"-100%"},2000)
+				setTimeout(show2,3000)
+			}
+			function show2(){
+				$("#img3").css({"left":"100%"})
+				$("#img2").animate({"left":"0"},2000)
+				$("#img1").animate({"left":"-100%"},2000)
+				setTimeout(show3,3000)
+			}
+			function show3(){
+				$("#img1").css({"left":"100%"})
+				$("#img3").animate({"left":"0"},2000)
+				$("#img2").animate({"left":"-100%"},2000)
+				setTimeout(show1,3000)
+			}
+
+		})
+	</script>
+	<style>
+		div{
+			width:800px ;
+			height: 533px;
+			overflow: hidden;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -400px;
+			margin-top: -250px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="images/slider1.jpg" alt="" id="img1">
+		<img src="images/slider3.jpg" alt="" id="img2">
+		<img src="images/slider5.jpg" alt="" id="img3">
+	</div>
+</body>
+</html>

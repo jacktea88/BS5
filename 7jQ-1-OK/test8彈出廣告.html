@@ -33,6 +33,10 @@ body{
   top: -85px;
   left:25%;
 }
+/* 以下可做可不做 */
+#cf span:hover{
+  cursor: pointer;
+}
 @keyframes showcf{
 /*   from{opacity: 0;transform: scale(0,0);}
   to{opacity:1;transform: scale(1,1);} */
@@ -42,11 +46,25 @@ body{
 }
 
 </style>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+$(function(){
+  // $("#cf span").hide();
+  $("#cf span").css("opacity","0");
+  setTimeout(showSpan,3000)
+  function showSpan(){
+    $("#cf span").fadeIn('slow').css("opacity","1");
+  }
+  $("#cf span").click(function(){
+    $("#cf").fadeOut('fast');
+  })
+})
+</script>
 
 </head>
 
 <body>
-<div id="cf">點我拿好康</div>
+<div id="cf">點我拿好康<span>&times;</span></div>
 
 </body>
 </html>

@@ -5,20 +5,20 @@
 
 <title>使用 attr(); 抓取並控制 HTML 標籤的屬性</title>
 <link href="css/layout.css" rel="stylesheet" type="text/css">
+
+<!-- <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script> -->
 <script src="js/jquery-3.6.0.min.js"></script>
+<!-- <script type="text/javascript"> -->
 <script>
-	$(function () {
-    $("#SS1,#SS2,#SS3,#SS4").hover(function () {
-        // over
-        // $(this).attr("src");
-        // alert($(this).attr("src"));
-        let smallSrc=$(this).attr("src");
-        $("#BIG").attr("src", smallSrc);
-      }, function () {
-        // out
-      }
-    );
-  });
+
+	$(function(){
+		$("#SS1,#SS2,#SS3,#SS4").hover(function(){
+			// alert($(this).attr("src"))
+			// console.log($(this).attr("src"))
+			let smallSrc=$(this).attr("src")
+			$("#BIG").attr("src",smallSrc)
+		})
+	})
 </script>
 
 

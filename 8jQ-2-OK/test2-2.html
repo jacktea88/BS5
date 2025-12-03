@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>使用 attr(); 抓取並控制 HTML 標籤的屬性2</title>
+
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			text-align: center;
+		}
+		img{
+			width: 60%;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			//alert($(this).width()/2)
+			let picList,kk,tt;
+			picList=["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16"];
+			kk=0;
+			$("html").mousemove(function(e){
+				if(e.pageX>$(this).width()/2){
+					if(kk>=15){
+						kk=15;
+					}else{
+						kk++
+					}
+				}else if(e.pageX<($(this).width()/2)+500){
+					if(kk==0){
+						kk=0;
+					}else{
+						kk--
+					}
+				}
+				tt="images/StreetRod/"+picList[kk]+".jpg";
+				$("#BIG").attr("src",tt)	
+			})
+			
+		})
+	</script>
+
+
+
+</head>
+
+<body>
+
+	<h1>車輛展示</h1>
+	<hr>
+
+	<div>
+
+
+		<img src="images/StreetRod/01.jpg" id="BIG">
+
+	</div>
+
+
+
+</body></html>
