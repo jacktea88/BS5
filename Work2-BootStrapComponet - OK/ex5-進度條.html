@@ -11,7 +11,8 @@
   <title>BS-組件組合-進度條類別</title>
   <style>
     .ani{
-      animation: 2s kk;
+      /* 兩秒執行kk動畫 */
+      animation: 2s kk; 
     }
     @keyframes kk{
       from{width:0%;}
@@ -28,14 +29,30 @@
     <div class="row">
       <div class="col">
         <h1 class="h2 text-light mt-5">進度條</h1>
-
+        <!-- 基本進度條 -->
+        <div class="progress">
+          <div class="progress-bar" style="width: 95%;">95%</div>
+        </div>
+        <!-- 加高度 -->
         <hr>
-
+        <div class="progress" style="height: 50px;">
+          <div class="progress-bar bg-danger" style="width: 95%;">95%</div>
+        </div>
+        <!-- 條紋狀 -->
         <hr>
-
+        <div class="progress" style="height: 50px;">
+          <div class="progress-bar progress-bar-striped bg-success" style="width: 95%;">95%</div>
+        </div>
+        <!-- 條紋會變動 -->
         <hr>
-
+        <div class="progress" style="height: 50px;">
+          <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width: 95%;">95%</div>
+        </div>
+        <!-- 進度寬度變化的效果 -->
         <hr>
+        <div class="progress" style="height: 50px;">
+          <div class="progress-bar bg-info ani" style="width: 95%;">95%</div>
+        </div>
 
   
         <p class="text-warning">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Inventore fugiat, nemo eveniet! Labore architecto cupiditate dolore nihil, veritatis reprehenderit iste repellat, tempore obcaecati, saepe aspernatur debitis in vel, sapiente odio vitae repellendus quam asperiores quae ratione! Animi culpa nesciunt obcaecati numquam, possimus optio nihil quod deleniti voluptate quis deserunt facere in sequi odio voluptatum excepturi sint quaerat molestiae. Et officiis numquam unde. Ipsam mollitia eius nostrum aliquam aperiam, at cumque necessitatibus consequatur maiores, iste consectetur sint impedit inventore nisi. Rem.</p>
