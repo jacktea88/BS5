@@ -15,19 +15,26 @@
 
     <title>BS-組件組合-輪播照片</title>
     <style>
+      /* 改成圓點的css在這裏設定沒有作用，要用行內css */
       .navRound{
         width: 10px;
         height: 10px;
         border-radius: 100%;
         
       }
-      #pic1{
-        background-image: url('images/s13.jpg'); 
+
+      /* 下面css說明： */
+        /* background-repeat: no-repeat; 用延展而不是重複 */
+        /* background-size: cover; 比例能跟裝置一樣大(自動調整) */
+        /* height: 75vh;  須要設高度，否則看不到圖片 */
         /* background-image: url('images/cat.jpg');  */
+
+      /* #pic1{
+        background-image: url('images/s13.jpg'); 
         background-position: center;
-        background-repeat: no-repeat; /* 用延展而不是重複 */
-        background-size: cover; /*比例能跟裝置一樣大(自動調整) */
-        height: 75vh; /* 須要設高度，否則看不到圖片 */
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        height: 75vh; 
       }
       #pic2{
         background-image: url('images/s15.jpg');
@@ -42,7 +49,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: 75vh;
-      }
+      } */
     </style>
   </head>
   <body>
