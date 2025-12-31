@@ -33,28 +33,9 @@
         background-position: center;
         background-size: cover; /*自動縮放 */
         background-repeat: no-repeat; /*不重複不併貼*/
-        height: 60vh;
+        /* background-attachment: fixed; */
+        height: 60vh; /* 須要設高度，否則看不到圖片 VIEWPORT 60% */
       }
-
-      /* 移到外部Css檔案 */
-      /* .navBg{
-        background-color: rgba(0, 0, 0, 0.3);
-        transition: all 0.8s;
-      }
-      .navBg:hover{
-        background-color: rgba(0, 0, 0, 0.9);
-        cursor: pointer;
-      } */
-
-      /* BS5已經有btn滑過的動畫，不用再寫 */
-      /* .bigBtn {
-        transition: all 0.5s;
-      }
-      .bigBtn:hover {
-        opacity: 0.6;
-        transform: scale(0.8, 0.8);
-        filter: invert();
-      } */
     </style>
   </head>
   <body class="bg-dark">
@@ -79,16 +60,14 @@
       </div>
     </nav>
     <div class="container-fluid">
-      <!-- BANNER 一列一欄的圖片 -->
+      <!-- 第一列：BANNER 一列一欄的圖片 -->
       <div class="row" id="banner">
         <div class="col"></div>
       </div>
-      <!-- 第一列：一列二欄的圖文 -->
+      <!-- 第二列：一列二欄的圖文(左文字右圖) -->
       <!-- .row>.col* -->
       <div class="row d-flex justify-content-center align-items-center">
-        <div
-          class="col-10 col-sm-5 col-lg-4 d-flex justify-content-center align-items-center my-3"
-        >
+        <div class="col-10 col-sm-5 col-lg-4 d-flex justify-content-center align-items-center my-3">
           <div>
             <h1 class="h5 text-info">
               | 關於我們 About Us
@@ -104,11 +83,12 @@
             </ul>
           </div>
         </div>
+        <!-- 第二列右圖 -->
         <div class="col-10 col-sm-5 col-lg-4 my-3">
           <img src="images/door4.png" alt="" class="img-thumbnail" />
         </div>
       </div>
-      <!-- 第二列：一列二欄的圖文 -->
+      <!-- 第三列：一列二欄的圖文(左圖右文字) -->
       <!-- .row>.col* -->
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col-10 col-sm-5 col-lg-4 my-3">
