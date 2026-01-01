@@ -16,17 +16,30 @@
     <title>BS-組件組合-表單</title>
   </head>
   <body>
-    <div class="container bg-dark text-white rounded mt-3">
+    <div class="container bg-dark text-white rounded mt-3"> 
       <div class="row">
         <div class="col">
-
+          <!-- 表單標題 -->
           <h1>Web <span class="badge bg-danger">Survey</span></h1>
+          <!-- 表單輸入框 form>(label+input)*4 -->
           <form action="">
-            <!-- 文字輸入 -->
-            <div class="form-group my-2"><label for="user">姓名：</label><input type="text" placeholder="請輸入姓名" required id="user" class="form-control"></div>
-            <div class="form-group my-2"><label for="email">郵件：</label><input type="email" placeholder="請輸入正確格式的電子郵件" required id="email" class="form-control"></div>
-            <div class="form-group my-2"><label for="tel">電話：</label><input type="tel" placeholder="請輸入行動電話號碼10位數" required id="tel" class="form-control"></div>
-            <div class="form-group my-2"><label for="num">數量：</label><input type="number" placeholder="請輸入購買數量" required id="num" class="form-control"></div>
+            <!-- 4個文字輸入框 -->
+            <div class="form-group my-2">
+              <label for="user">姓名：</label>
+              <input type="text" placeholder="請輸入姓名" required id="user" class="form-control">
+            </div>
+            <div class="form-group my-2">
+              <label for="email">郵件：</label>
+              <input type="email" placeholder="請輸入正確格式的電子郵件" required id="email" class="form-control">
+            </div>
+            <div class="form-group my-2">
+              <label for="tel">電話：</label>
+              <input type="tel" placeholder="請輸入行動電話號碼10位數" required id="tel" class="form-control">
+            </div>
+            <div class="form-group my-2">
+              <label for="num">數量：</label>
+              <input type="number" placeholder="請輸入購買數量" required id="num" class="form-control">
+            </div>
             <!-- 多選 NAME是傳給後端用的-->
             <h2 class="my-5">專業領域</h2>
             <div class="form-group form-check-inline"><input type="checkbox">Web Design</div>
