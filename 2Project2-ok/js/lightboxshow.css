@@ -1,6 +1,6 @@
 /* Preload images */
 body:after {
-  content: url(../images/close.png) url(../images/loading.gif) url(../images/prev.png) url(../images/next.png);
+  content: url(../images/close1.png) url(../images/loading.gif) url(../images/Arrows-Back-icon.png) url(../images/Arrows-Forward-icon.png);
   display: none;
 }
 
@@ -119,7 +119,7 @@ body:after {
   width: 34%;
   left: 0;
   float: left;
-  background:url(../images/prev.png) left 48% no-repeat;
+  background:url(../images/Arrows-Back-icon.png) left 48% no-repeat;
   background-size:60px 60px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -138,7 +138,7 @@ body:after {
   width: 64%;
   right: 0;
   float: right;
-  background:url(../images/next.png) right 48% no-repeat;
+  background:url(../images/Arrows-Forward-icon.png) right 48% no-repeat;
   background-size:60px 60px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -203,7 +203,7 @@ body:after {
   float: right;
   width: 60px;
   height: 60px;
-  background:url(../images/close.png) top right no-repeat;
+  background:url(../images/close1.png) top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
