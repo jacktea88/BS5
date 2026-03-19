@@ -35,6 +35,14 @@
       </div>
       <div class="row">
         <div class="col">
+          <!-- 麵包屑 原始樣式-->
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="">首頁</a></li>
+            <li class="breadcrumb-item"><a href="">創作</a></li>
+            <li class="breadcrumb-item"><a href="">新人展示</a></li>
+            <li class="breadcrumb-item"><a>大偉</a></li>
+          </ul>  
+          <!-- 麵包屑 客製樣式-->
           <ul class="breadcrumb">
             <li class="breadcrumb-item2"><a href="">首頁</a></li>
             <li class="breadcrumb-item2"><a href="">創作</a></li>
@@ -42,7 +50,10 @@
             <li class="breadcrumb-item2"><a href="">大偉</a></li>
             <!-- <li class="breadcrumb-item2"><a href="">攝影作品</a></li> -->
             <!-- 最後一個不要有超連結 -->
-            <li class="breadcrumb-item2"><a>攝影作品</a></li>
+            <!-- 錯誤方式 -->
+            <!-- <li class="breadcrumb-item2"><a class="btn disabled btn-outline-0">攝影作品</a></li> -->
+            <!-- 正確方式 不要有<a>也可做到，但較不好，無法加其他的class設定，且沒有定位點 -->
+            <li class="breadcrumb-item2"><a class="text-danger">攝影作品</a></li>
           </ul>
           <hr>
           <div class="row">
@@ -65,7 +76,7 @@
           </div>
           <hr>
          <ul class="pagination justify-content-center">
-           <li class="page-item active"><a href="" class="page-link">1</a></li>
+           <li class="page-item active"><a class="page-link">1</a></li>
            <li class="page-item"><a href="" class="page-link">2</a></li>
            <li class="page-item"><a href="" class="page-link">3</a></li>
            <li class="page-item"><a href="" class="page-link">4</a></li>
