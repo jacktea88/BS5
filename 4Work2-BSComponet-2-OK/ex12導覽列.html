@@ -16,10 +16,11 @@
     <title>BS-組件組合-導覽列</title>
   </head>
   <body>
-    <div class="navbar bg-dark navbar-dark fixed-top navbar-expand-md">
+    <div class="navbar bg-dark navbar-dark navbar-expand-md fixed-top">
       <h1 class="navbar-brand">Photo</h1>
       <!-- 也可放品牌圖片 -->
       <!-- <img src="images/logo.jpg" alt=""> -->
+      <!-- 六、漢堡選單 -->
       <button
         class="navbar-toggler"
         data-bs-toggle="collapse"
@@ -28,6 +29,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="menu">
+        <!-- 二、ul>(li>a{link$})*4 -->
         <ul class="navbar-nav text-center">
           <li class="nav-item"><a href="" class="nav-link">link1</a></li>
           <li class="nav-item"><a href="" class="nav-link">link2</a></li>
@@ -36,7 +38,10 @@
         </ul>
       </div>
     </div>
-    <!-- 導覽列要在容器外面(上方) -->
+    <!-- 以上導覽列要在容器外面(上方) -->
+     
+    
+    <!-- 以下是導覽列下方容器的內容 -->
     <div class="container-fluid">
       <div class="row">
         <div class="col"></div>
