@@ -28,8 +28,9 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- 五、漢堡選單的內容 -->
       <div class="collapse navbar-collapse justify-content-end" id="menu">
-        <!-- 二、ul>(li>a{link$})*4 -->
+        <!-- 二三四、ul>(li>a{link$})*4 -->
         <ul class="navbar-nav text-center">
           <li class="nav-item"><a href="" class="nav-link">link1</a></li>
           <li class="nav-item"><a href="" class="nav-link">link2</a></li>
@@ -38,6 +39,33 @@
         </ul>
       </div>
     </div>
+
+    <!-- 再加入下拉選單 -->
+<div class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+      <button class="navbar-toggler" data-bs-toggle="collapse" 
+          data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="" class="nav-link">link1</a></li>
+          <li class="nav-item"><a href="" class="nav-link">link2</a></li>
+          <!-- 十一、下拉式功能表 -->
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+              link3
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item"><a href="" class="nav-link">link4</a></li>
+        </ul>
+      </div>
+    </div>
+    
     <!-- 以上導覽列要在容器外面(上方) -->
      
     
