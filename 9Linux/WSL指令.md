@@ -454,7 +454,7 @@ localhostForwarding=true
 # 匯出（備份）
 wsl --export Ubuntu backup-ubuntu.tar
 
-# 匯入（還原）
+# 匯入（還原）版本名稱 目的地路徑    備份還原檔路徑及檔名
 wsl --import Ubuntu C:\WSL\Ubuntu backup-ubuntu.tar --version 2
 
 # 登錄並刪除發行版（危險！）
