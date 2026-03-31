@@ -49,16 +49,23 @@
           <li class="nav-item"><a href="" class="nav-link">link1</a></li>
           <li class="nav-item"><a href="" class="nav-link">link2</a></li>
           <!-- 十一、下拉式功能表 -->
-          <li class="nav-item dropdown">
+          <li class="nav-item">
             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
               link3
             </a>
-            <ul class="dropdown-menu">
+            <!-- 另一種寫法： -->
+            <!-- <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+            </ul> -->
+            <!-- ex9-下拉式功能表.html裡的寫法： -->
+            <div class="dropdown-menu">
+              <a href="" class="dropdown-item bg-danger">link1</a>
+              <a href="" class="dropdown-item active">link2</a>
+              <a href="" class="dropdown-item">link3</a>  
+            </div>
           </li>
           
           <li class="nav-item"><a href="" class="nav-link">link4</a></li>
