@@ -19,10 +19,17 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <a href="" class="btn btn-info m-5" title="TIP" data-bs-toggle="tooltip" data-bs-placement="top">link1</a>
-          <a href="" class="btn btn-danger m-5" title="TIP" data-bs-toggle="tooltip" data-bs-placement="left">link2</a>
-          <a href="" class="btn btn-warning m-5" title="TIP" data-bs-toggle="tooltip" data-bs-placement="bottom">link3</a>
-          <a href="" class="btn btn-primary m-5" title="TIP" data-bs-toggle="tooltip" data-bs-placement="right">link4</a>
+          <a href="" class="btn btn-info m-5" title="TIP"
+           data-bs-toggle="tooltip" data-bs-placement="top">link1</a>
+
+          <a href="" class="btn btn-danger m-5" title="TIP"
+           data-bs-toggle="tooltip" data-bs-placement="left">link2</a>
+
+          <a href="" class="btn btn-warning m-5" title="TIP"
+           data-bs-toggle="tooltip" data-bs-placement="bottom">link3</a>
+
+          <a href="" class="btn btn-primary m-5" title="TIP"
+           data-bs-toggle="tooltip" data-bs-placement="right">link4</a>
         </div>
       </div>
     </div>
@@ -37,9 +44,14 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      // 兩種寫法都可以
       $(function () {
-        $('a').tooltip();
+        $('[data-bs-toggle="tooltip"]').tooltip();
       });
+
+      // $(function () {
+      //   $('a').tooltip();
+      // });
     </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->

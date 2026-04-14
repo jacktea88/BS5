@@ -48,11 +48,13 @@
       }
     </style>
   </head>
-  <body data-bs-spy="scroll" data-bs-target=".navbar">
+  <body data-bs-spy="scroll" data-bs-target="#nv">
     <!-- 一、導航選單：nav>ul>(li>a{link$})*5 -->
-    <nav class="navbar navbar-dark fixed-top justify-content-end">
+    <nav class="navbar-dark fixed-top justify-content-end" id="nv">
       <div class="navbar-nav flex-row">
-        <button class="nav-item bg-secondary border-0"><a href="#area1" class="nav-link">link1</a></button>
+        <button class="nav-item border-0" style="background-color: transparent;">
+          <a href="#area1" class="nav-link">link1</a>
+        </button>
         <button class="nav-item bg-secondary border-0"><a href="#area2" class="nav-link">link2</a></button>
         <button class="nav-item bg-secondary border-0"><a href="#area3" class="nav-link">link3</a></button>
         <button class="nav-item bg-secondary border-0"><a href="#area4" class="nav-link">link4</a></button>
