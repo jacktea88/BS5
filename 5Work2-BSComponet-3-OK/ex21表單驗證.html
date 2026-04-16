@@ -19,6 +19,8 @@
     <div class="container">
       <div class="row">
         <div class="col">
+          <!-- 用form來區隔，因為每個form的驗證是獨立的，如果放在同一個form裡面，會有驗證衝突的問題。 -->
+          <!-- 若要放在同一個form裡面，可用div來區隔不同的input驗證區塊， -->
           <form action="" class="was-validated">
             <div class="form-group">
               <input type="text" placeholder="請輸入資料" required class="form-control">
@@ -39,6 +41,9 @@
           </form>
           
           <!-- 浮動標籤label 點輸入框時label會出現在輸入框上-->
+          <!-- 注意：浮動標籤的input和label要放在同一個form裡面，且input要有id，label的for屬性要對應到input的id， -->
+          <!-- placeholder屬性要有，這樣才能啟動浮動標籤的功能，否則label會一直顯示在輸入框上方，不會在輸入框中間，也沒有浮動效果。 -->
+           
           <form action="" class="mt-5 form-floating was-validated">
             <input type="text" class="form-control" name="" id="n" placeholder="請輸入姓名" required class="form-control">
             <label for="n">輸入姓名(浮動標籤)</label>

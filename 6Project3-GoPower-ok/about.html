@@ -39,6 +39,7 @@
     </style>
   </head>
   <body class="bg-dark">
+    <!-- 一、導覽列 要放在容器外面 先做ul>(li>a)*3 -->
     <!-- .navbar>h1{Go Power}+button+.collapse>ul>(li>a)*3 -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top px-3 navBg">
       <h1 class="navbar-brand">GoPower</h1>
@@ -68,7 +69,8 @@
       <!-- .row>.col* -->
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col-10 col-sm-5 col-lg-4 d-flex justify-content-center align-items-center my-3">
-          <div> <!--是區塊屬性，預設不會繼承父層的flex屬性，可利用此特性來改變子元素的對齊方式 -->
+          <div> 
+          <!--是區塊屬性，預設不會繼承父層的flex屬性，可利用此特性來改變子元素的對齊方式 -->
           <!-- DEMO這樣也可以，但不設就可達成目的了
            <div class="d-flex flex-column"> -->
             <h1 class="h5 text-info">
