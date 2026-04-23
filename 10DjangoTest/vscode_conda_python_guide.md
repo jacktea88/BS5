@@ -52,6 +52,9 @@ conda activate myenv
 }
 ```
 
+### 終端機選擇
+python.terminal.activateEnvironment
+
 ---
 
 ## 六、常見問題
