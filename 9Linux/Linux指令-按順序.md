@@ -4,7 +4,30 @@
     *   `ls_release -a`：查看發行版詳細資訊。
     *   `hostnamectl`：查看主機名稱與系統相關資訊。
 
+*   **linux目錄結構**
+![目錄結構](image/image0.png)
+![重要目錄說明](image/image.png)
+![架構關係](image/image-1.png)
+
 ### **第二章：系統基本操作**
+#### 一、 指令下達基本語法
+在 Linux 中，指令的基本結構為：**`command [options] [arguments]`**。
+*   **Command：** 指令名稱。
+*   **Options：** 選項（如 `-a` 或 `--help`），用來調整指令行為。
+*   **Arguments：** 參數，指指令作用的對象（如檔案或目錄名稱）。
+
+#### 二、 系統入門與輔助按鍵
+*   **常用按鍵：**
+    *   **Tab：** 指令或檔案名稱補全。
+    *   **Ctrl + C：** 中斷目前正在前景執行的程式。
+    *   **Ctrl + D：** 中斷 Shell 互動模式或登出。
+    *   **↑ ↓：** 切換已使用過的指令歷史。
+*   **求助與結束：**
+    *   **man：** 查看指令的詳細使用手冊（如 `man cat`）。
+    *   **exit / logout：** 登出系統。
+    *   **shutdown now / init 0：** 立即關機。
+    *   **reboot / init 6：** 重新開機。
+
 *   **網路與套件管理：**
     *   `get`：由 DOS 透過 SSH 下載檔案。
     *   `sudo apt update / upgrade`：更新套件清單。
