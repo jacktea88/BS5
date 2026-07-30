@@ -6,6 +6,7 @@
     <title>div test</title>
 </head>
 <body>
+   <!-- 一、實驗證明div沒有寬度和頁面一樣寬 -->
      <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit nesciunt amet consequuntur necessitatibus suscipit mollitia, sed neque quisquam incidunt natus accusamus inventore fugit corporis sunt rem quaerat ex quo sit!
      </p>
@@ -13,12 +14,13 @@
      <div style="width: 500px; background: yellow; display: inline-block;">
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, nemo, ipsam ipsa maxime inventore sapiente totam error laudantium, sint ut velit vel nam harum molestiae minima assumenda. Numquam, aliquam architecto!</p>
      </div>
-<hr>
-     <div style="width: 500px; background: yellow; display: inline-block;">
+
+   <!-- 二、div的bg屬性沒有效果 -->
+     <div style="width: 500px; background: green; display: inline-block;">
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, nemo, ipsam ipsa maxime inventore sapiente totam error laudantium, 
             <br>sint ut velit vel nam   <span style="color: red;">Numquam, aliquam architecto!</span></p>
       </div>
-
+<hr>
 <!-- iframe demo       -->
       <iframe src="https://www.microsoft.com/zh-tw/" frameborder="0" width="500px"></iframe>
       <!-- <iframe src="https://www.gogoro.com/tw/" frameborder="0" width="500px"></iframe> -->
