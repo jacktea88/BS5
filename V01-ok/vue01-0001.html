@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-HANT-TW">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML的任務</title>
+    <style>
+        body {
+            background-color: #c4c4c4;
+        }
+
+        .ThreeDtext {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+            text-transform: uppercase;
+            text-align: center;
+            font-family: verdana;
+            font-size: 3em;
+            font-weight: 700;
+            color: #f5f5f5;
+            text-shadow: 1px 1px 1px #919191,
+                1px 2px 1px #919191,
+                1px 3px 1px #919191,
+                1px 4px 1px #919191,
+                1px 5px 1px #919191,
+                1px 6px 1px #919191,
+                1px 7px 1px #919191,
+                1px 8px 1px #919191,
+                1px 9px 1px #919191,
+                1px 10px 1px #919191,
+                1px 18px 6px rgba(16, 16, 16, 0.4),
+                1px 22px 10px rgba(16, 16, 16, 0.2),
+                1px 25px 35px rgba(16, 16, 16, 0.2),
+                1px 30px 60px rgba(16, 16, 16, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- JS的做法 -->
+    <span class="ThreeDtext" id="demo" onclick="change_text(); return false">Vue.js 3</span>
+
+    <script>
+        function change_text() {
+            var old_value = document.getElementById("demo").innerHTML
+            document.getElementById("demo").innerHTML = old_value +  "漸進式框架"
+        }
+    </script>
+
+    <!-- Vue的做法 -->
+    <!-- <div id="app">
+        <span class="ThreeDtext" @click="change_text">{{ message }}</span>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    message: "Vue.js 3"
+                }
+            },
+            methods: {
+                change_text() {
+                    this.message = this.message + "\n漸進式框架";
+                    
+                }
+            }
+        })
+        app.mount('#app')
+    </script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-HANT-TW">
+
+<head>
+    <meta charset="utf-8">
+    <title>單向流出之資料綁定</title>
+</head>
+
+<body>
+    <!-- Vue實例的掛載點 -->
+    <div id="app">
+        {{ message }}
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- Vue實例的程式碼 -->
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    message: "Vue.js 3"
+                }
+            }
+
+        })
+
+        app.mount("#app")
+    </script>
+</body>
+
+</html>
