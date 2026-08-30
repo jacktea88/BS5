@@ -201,9 +201,9 @@ body:after {
 .lb-data .lb-close {
   display: block;
   float: right;
-  width: 60px;
-  height: 60px;
-  background:url(../images/close1.png) top right no-repeat;
+  width: 72px;
+  height: 72px;
+  background:url(../images/close.png) top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
