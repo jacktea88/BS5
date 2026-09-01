@@ -15,6 +15,8 @@
     <div class="row">
       <div class="col">
         <!-- 只有card-body的內容 -->
+        <!-- 用collapse折疊時要加上collapse讓內容有預設是不顯示的效果 -->
+        <!-- <div class="card collapse bg-info" id="card3"> -->
         <!-- .card.bg-info>.card-body>h1[class=card-title]{SALE} -->
         <div class="card bg-info" id="card3">
           <div class="card-body">
@@ -22,8 +24,8 @@
           </div>
         </div>
         <!-- 補充：也可用折疊來做此效果(等折疊介紹完再回來demo) -->
-         <!-- 注意：特性是預設隱藏，所以第一次按collapse是show出來，
-         這例子原本就show出來的，所以第一次按還是會show出來，第二次以後就正常了 -->
+        <!-- 注意：特性是預設隱藏，所以若沒加.collapse第一次按show toggle按鈕是show出來，
+        這例子原本就show出來的，所以第一次按還是會show出來，第二次以後就正常了 -->
         <!-- <button data-bs-toggle="collapse" data-bs-target="#card3">show toggle</button> -->
         
         <!-- 再加header & footer -->
@@ -57,7 +59,7 @@
         <button onclick="showCard()">show</button>
         <img src="images/cat.jpg" alt="" style="width:50px;"  onclick="showCard()">
         
-        <!-- body加圖片和關閉按鈕 -->
+        <!-- 卡片的body加圖片和footer加關閉按鈕 -->
         <div class="card bg-danger alert" id="card">
           <!-- header -->
           <div class="card-header">
@@ -88,7 +90,7 @@
           <div class="card bg-danger">
             <!-- header -->
             <div class="card-header">
-              <h1 class="card-title">NEWS</h1>
+              <h1 class="card-title">NEWS2</h1>
             </div>
             <!-- body -->
             <div class="card-body">
