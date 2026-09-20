@@ -51,11 +51,13 @@
   <body data-bs-spy="scroll" data-bs-target="#nv">
     <!-- 一、導航選單：nav>ul>(li>a{link$})*5 -->
     <nav class="navbar-dark fixed-top justify-content-end" id="nv">
+      <!-- 二、變水平的設定 flex-row -->
       <div class="navbar-nav flex-row">
         <button class="nav-item border-0" style="background-color: transparent;">
+          <!-- 三、href=”一定要有東西#area1否則會沒有互動效果，不知互動對象是誰 -->
           <a href="#area1" class="nav-link">link1</a>
         </button>
-        <!-- bg-transparent 讓按鈕背景透明，border-0讓按鈕沒有邊框，這樣就不會看到按鈕的外框了 -->
+        <!-- 十二、bg-transparent 讓按鈕背景透明或有顏色，border-0讓按鈕沒有邊框，這樣就不會看到按鈕的外框了 -->
         <button class="nav-item bg-transparent border-0"><a href="#area2" class="nav-link">link2</a></button>
         <button class="nav-item bg-secondary border-0"><a href="#area3" class="nav-link">link3</a></button>
         <button class="nav-item bg-secondary border-0"><a href="#area4" class="nav-link">link4</a></button>
@@ -63,9 +65,11 @@
       </div>
     </nav>
     <div class="container-fluid">
+      <!-- 五、加上.vh-100強制高度是滿版，無內容也可以撐起高度 -->
       <div class="row vh-100">
         <!-- 四、區塊一 -->
         <div class="col-12 bg-secondary h-100" id="area1">
+          <!-- 六、加區塊內容h1+p -->
           <h1 class="text-white display-3">Area1</h1>
           <p class="text-dark">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed ipsa
@@ -74,7 +78,7 @@
             alias debitis explicabo similique. Dolores!
           </p>
         </div>
-        <!-- 區塊二 -->
+        <!-- 七、copy區塊一col範圍來做區塊二 -->
         <div class="col-12 bg-success h-100" id="area2">
           <h1 class="text-white display-3">Area2</h1>
           <p class="text-dark">

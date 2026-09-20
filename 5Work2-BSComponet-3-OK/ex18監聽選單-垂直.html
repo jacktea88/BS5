@@ -50,6 +50,8 @@
   <body data-bs-spy="scroll" data-bs-target=".navbar">
     <!-- nav>ul>(li>a{link$})*5 -->
     <!-- .navbar-nav>(button>a[href="#area$"]{link$})*5 -->
+    <!-- 一、改垂直：<ul>的flex-row拿掉 -->
+    <!-- 這兩組設定同時間只能有一個spy的效果，同時顯示是要比較btn和li的差異 -->
     <nav class="navbar justify-content-end navbar-dark fixed-top">
       <div class="navbar-nav">
         <li class="btn rounded-0 border-0 bg-secondary"><a href="#area1" class="nav-link">link1</a></li>
@@ -60,11 +62,11 @@
       </div>
       
       <div class="navbar-nav">
-        <button class="nav-item border-0 bg-secondary"><a href="#area1" class="nav-link">link1</a></button>
-        <button class="nav-item border-0 bg-secondary"><a href="#area2" class="nav-link">link2</a></button>
-        <button class="nav-item border-0 bg-secondary"><a href="#area3" class="nav-link">link3</a></button>
-        <button class="nav-item border-0 bg-secondary"><a href="#area4" class="nav-link">link4</a></button>
-        <button class="nav-item border-0 bg-secondary"><a href="#area5" class="nav-link">link5</a></button>
+        <button class="nav-item border-0 bg-secondary"><a href="#area1" class="nav-link">btn1</a></button>
+        <button class="nav-item border-0 bg-secondary"><a href="#area2" class="nav-link">btn2</a></button>
+        <button class="nav-item border-0 bg-secondary"><a href="#area3" class="nav-link">btn3</a></button>
+        <button class="nav-item border-0 bg-secondary"><a href="#area4" class="nav-link">btn4</a></button>
+        <button class="nav-item border-0 bg-secondary"><a href="#area5" class="nav-link">btn5</a></button>
       </div>
     </nav>
     <!-- 區塊一 -->

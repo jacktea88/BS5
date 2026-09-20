@@ -27,7 +27,7 @@
               <div class="valid-feedback">資料輸入正確</div>
               <div class="invalid-feedback">請輸入名稱</div>
             </div>
-          <form action="" class="was-validated">
+          <!-- <form action="" class="was-validated"> -->
             <div class="form-group">
               <input type="email" placeholder="請輸入資料" class="form-control">
               <div class="valid-feedback">資料輸入正確</div>
@@ -35,8 +35,10 @@
             </div>
             <input type="submit" value="送出">
           </form>
-          <form action="" class="mt-5">
-            <input type="text" class="form-control" name="" id="n" placeholder="請輸入姓名" required class="form-control">
+          
+          <!-- 以下兩個是一般和浮動標籤的比較 -->
+          <form action="" class="mt-5 was-validated">
+            <input type="text" class="form-control" name="" id="n" placeholder="請輸入姓名" required>
             <label for="n">輸入姓名</label>
           </form>
           
@@ -45,7 +47,7 @@
           <!-- placeholder屬性要有，這樣才能啟動浮動標籤的功能，否則label會一直顯示在輸入框上方，不會在輸入框中間，也沒有浮動效果。 -->
            
           <form action="" class="mt-5 form-floating was-validated">
-            <input type="text" class="form-control" name="" id="n" placeholder="請輸入姓名" required class="form-control">
+            <input type="text" class="form-control" name="" id="n" placeholder="請輸入姓名" required>
             <label for="n">輸入姓名(浮動標籤)</label>
           </form>
         </div>

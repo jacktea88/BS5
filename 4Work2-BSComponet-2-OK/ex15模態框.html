@@ -20,12 +20,16 @@
       <div class="row">
         <div class="col">
           <!-- 一、btn{show}+img -->
+          <!-- 八、按鈕觸發模態框 -->
           <button data-bs-toggle="modal" data-bs-target=".modal" class="btn btn-primary">show</button>
+          <!-- 七、模態框本體 + 十、fade-->
           <div class="modal fade" id="infoArea">
+            <!-- 五、class="modal-dialog + 九、modal-lg" 來設定模態框大小 -->
             <div class="modal-dialog modal-lg modal-dialog-centered">
               <div class="modal-content">
-                <!-- 十一、補充：加header & 關閉按鈕(自動彈出的js要關掉) -->
+                <!-- 十四、補充：加header & 關閉按鈕(自動彈出的js要關掉) -->
                 <!-- <div class="modal-header">header <a href=""><span data-bs-dismiss="modal" class="btn-close"></span></a></div> -->
+                <!-- 十一、白色邊框縮小 p-1-->
                 <div class="modal-body p-1">
                   <img src="images/cat.jpg" alt="" class="img-fluid" />
                 </div>
@@ -53,13 +57,17 @@
   </body>
 </html>
 
+<!-- 十二、頁面加載時自動顯示模態框不用點按鈕 -->
 <script>
   window.addEventListener("load", function () {
     let cf = new bootstrap.Modal(document.querySelector(".modal"));
-    // 改用id來取得要操作的模態框
+    // 十三、改用id來取得要操作的模態框
     // let cf=new bootstrap.Modal(document.getElementById("infoArea"));
     cf.show();
   })
+
+  //when load the page,  show modal 
+
 </script>
 
 <!-- 
