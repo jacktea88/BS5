@@ -38,7 +38,19 @@
           </div>
         </div>
       </div>
-    </div>
+    </div><!-- 十二、頁面加載時自動顯示模態框不用點按鈕 -->
+<script>
+  window.addEventListener("load", function () {
+    let cf = new bootstrap.Modal(document.querySelector(".modal"));
+    // 十三、改用id來取得要操作的模態框
+    // let cf=new bootstrap.Modal(document.getElementById("infoArea"));
+    cf.show();
+  })
+
+  //when load the page,  show modal 
+
+</script>
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -57,18 +69,7 @@
   </body>
 </html>
 
-<!-- 十二、頁面加載時自動顯示模態框不用點按鈕 -->
-<script>
-  window.addEventListener("load", function () {
-    let cf = new bootstrap.Modal(document.querySelector(".modal"));
-    // 十三、改用id來取得要操作的模態框
-    // let cf=new bootstrap.Modal(document.getElementById("infoArea"));
-    cf.show();
-  })
 
-  //when load the page,  show modal 
-
-</script>
 
 <!-- 
    透過增加 .modal-sm 類來創建一個小模態框，.modal-lg 類可以創建一個大模態框。 
