@@ -1,0 +1,57 @@
+index.html
+例一：全文字指令
+請設計一個首頁網頁,包含index.html和對應的style.css。網頁主體使用body區域包覆,其中依序包含header及一個空白區域。
+header裏有nav區塊,nav區塊左側需顯示「甜時,Sweet」文字，右側需包含「首頁」、「關於我們」和「產品介紹」三個頁面連結,並套用Bootstrap 的導覽列樣式。
+在style.css檔案,nav 區塊背景色為黑色,整體網頁背景需使用cake.jpg圖片製作滿版背景效果,並在畫面中央放置一個顯示「草莓奶油慕斯
+蛋糕」的區塊。該區塊背景色為rgba(255,73,73,0.62),文字顏色為色為白
+色
+
+例二：最終圖片截圖+指定背景檔案
+請設計一個首頁網頁,參考圖片，包含index.html和對應的style.css。整體網頁背景需使用cake.jpg圖片製作滿版背景效果
+色
+
+例三：由完成圖來產生提示詞
+提示詞：依據此圖片，請給我一個文字的提示詞來產生這樣的網頁
+
+AI：可以直接用這段提示詞：
+
+請設計一個甜點品牌首頁網站，整體風格清新、簡潔、以蛋糕主題為主。頁面使用滿版背景圖，背景素材為草莓奶油蛋糕，背景需鋪滿整個畫面並保持置中裁切。上方有一條黑色 Bootstrap 導覽列，左側顯示品牌文字「甜時 ． Sweet」，右側有三個導覽連結：「首頁」、「關於我們」、「產品介紹」，在手機版時可收合成漢堡選單。頁面中央放置一個半透明紅色區塊，背景色為 rgba(255,73,73,0.62)，區塊內以白色大字顯示「草莓奶油慕斯蛋糕」，文字水平與垂直置中，整體畫面要有溫暖、甜美、精緻的感覺，適合蛋糕店品牌首頁。需要提供 index.html 與對應的 style.css 版面設計。
+
+about.html
+例一：全文字指令
+請設計一的網頁,包含about.html和對應的about1.css。並導入Bootstrap5, 
+網頁依序包含header、banner、container 和 footer。
+header的呈現方式需與index.html保持一致;banner需放置banner.jpg圖片;container採用兩列兩欄的排版方式:第一列左側顯示「關
+於我們About US」文字,右側放置 cupcake.jpg 圖片;第二列左側放置
+macarons.jpg 圖片,右側顯示「店家資訊 About US」文字;footer則需顯示今年的版權宣告,頁面內容不足時仍然位於頁面底部。
+在about.css 檔案,footer 背景色為黑色。另外,所有的文字都需要置中對齊
+
+例二：切版檔案+指定背景檔案
+參考wireframe.html，請設計一個關於我們頁面,包含about2.html和對應的about2.css。
+header的呈現方式需與index.html保持一致;banner需放置banner.jpg圖片;
+container採用兩列兩欄的排版方式:
+第一列左側顯示「關於我們About US」文字,右側放置 cupcake.jpg 圖片;
+第二列左側放置macarons.jpg 圖片,右側顯示「店家資訊 About US」文字;
+footer則需顯示今年的版權宣告,頁面內容不足時仍然位於頁面底部。
+需要提供 about2.html 與對應的 about2.css 版面設計。
+
+例三：由wireframe.html來產生提示詞
+提示詞：依據此圖片，請給我一個文字的提示詞來產生這樣的網頁
+
+AI：可以直接用這段提示詞：
+
+請參考 wireframe 骨架圖，設計一個使用 Bootstrap 5 的版面結構示意網頁，並提供 wireframe.html 與對應的 wireframe.css。頁面整體結構依序包含 header、banner、container 和 footer。header 的導覽列需與首頁 index.html 保持一致，採用 Bootstrap 的 navbar、navbar-expand-lg、navbar-dark、bg-dark、fixed-top 樣式，左側顯示品牌文字「甜時 ． Sweet」，右側有三個導覽連結「首頁」、「關於我們」、「產品介紹」，並具備漢堡選單收合功能。
+
+banner 區塊放在導覽列下方，作為上方大區域示意。container 區塊採用兩列兩欄的 Bootstrap 排版方式：第一列左側為文字區塊，內容以 h3、p、p 這種骨架式標示呈現，右側放置圖片區塊；第二列則左右顛倒，左側放圖片區塊，右側放文字區塊。整體版面要呈現切版骨架的感覺，各區塊以不同底色區分，例如外框、欄位面板、文字方塊與圖片方塊都要清楚可辨識。footer 放在頁面最下方，顯示 footer 字樣，並保持與上方區塊有明確分隔。
+
+wireframe.css 需負責控制整體骨架視覺，包括導覽列底色、banner 區高度、container 外框顏色、row 與 col 的區塊色塊、文字與圖片的深色佔位塊，以及 footer 的底色與置中效果。頁面內容不需要真實主文案，重點是呈現清楚的 Bootstrap 版型骨架與區塊結構，方便後續再套入實際內容。
+
+product.html
+例一：全文字指令
+請設計一個產品項的網頁,包含product1.html 和對應的product1.css。並導入Bootstrap框架，網頁依序包含header、banner、container和footer。
+header、banner、footer的呈現方式需與about2.html保持一致。banner區域下方顯示「產品介紹」文字;container採用三欄式的排版方式，並套用Bootstrap 的card樣式,圖片依序套用cake01.jpg 圖片、cake02.jpg圖片、cake03.jpg圖片,文字依序套用「鄉村檸檬乳酪塔」、「精緻手工巧克力蛋糕」、「限量莓果乳酪蛋糕」,每一個 card右下方都有「我要訂購」按鈕。
+
+例二：切版檔案+指定背景檔案
+參考wireframe-product.html，請設計一個產品項目頁面,包含product2.html和對應的product2.css。
+header、banner、footer的呈現方式需與about2.html保持一致。banner區域下方顯示「產品介紹」文字;container採用三欄式的排版方式，並套用Bootstrap 的card樣式,圖片依序套用cake01.jpg 圖片、cake02.jpg圖片、cake03.jpg圖片,文字依序套用「鄉村檸檬乳酪塔」、「精緻手工巧克力蛋糕」、「限量莓果乳酪蛋糕」,每一個 card右下方都有「我要訂購」按鈕。
+需要提供 product2.html 與對應的 product2.css 版面設計。

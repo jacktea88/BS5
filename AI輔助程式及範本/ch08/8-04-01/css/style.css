@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    background: url('../images/bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    position: fixed;
+    width: 33.3333%;
+}
+
+.avatar-container {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.description {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.content {
+    margin-left: 33.3333%;
+    padding: 20px;
+}

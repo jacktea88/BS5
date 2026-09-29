@@ -1,0 +1,12 @@
+body {
+    background: url('../images/bg.jpg') center center ;
+    background-size: cover;
+}
+
+.footer {
+    background-color: #000;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於我們 - 甜時 Sweet</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">甜時，Sweet</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">關於我們</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">產品介紹</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="banner">
+        <img src="images/banner.jpg" alt="Banner" class="img-fluid">
+    </div>
+    <div class="container my-5">
+        <div class="row mb-4">
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <h2>關於我們 About US</h2>
+            </div>
+            <div class="col-md-6">
+                <img src="images/cupcake.jpg" alt="Cupcake" class="img-fluid">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="images/macarons.jpg" alt="Macarons" class="img-fluid">
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <h2>店家資訊 About US</h2>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center py-3">
+        <p>&copy; <span id="year"></span> 甜時 Sweet. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

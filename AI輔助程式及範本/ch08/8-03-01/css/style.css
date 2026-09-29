@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #545669;
+}
+
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../images/banner.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.banner-content h1 {
+    margin-bottom: 20px;
+}
+
+.content {
+    flex: 1;
+    
+}
+
+.content-item {
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+}
+
+.content-item:nth-child(1) {
+    background-color: rgba(0, 0, 0, 0.035);
+}
+
+.content-item:nth-child(2) {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+.content-item:nth-child(4) {
+    background-color: rgba(0, 0, 0, 0.105);
+}
+
+.content-item:nth-child(5) {
+    background-color: rgba(0, 0, 0, 0.14);
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}

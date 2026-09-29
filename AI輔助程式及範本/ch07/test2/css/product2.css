@@ -1,0 +1,81 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Microsoft JhengHei, sans-serif;
+  color: #333;
+  background: #fff;
+}
+
+main {
+  padding-top: 3.5rem;
+}
+
+.banner-area {
+  background-image: url("../images/banner.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 300px;
+}
+
+.page-title {
+  color: #fa8072;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+
+.product-grid {
+  align-items: stretch;
+}
+
+.product-card {
+  border: 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.product-image {
+  height: 240px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: #fa8072;
+  font-weight: 700;
+}
+
+.card-text {
+  text-align: center;
+  line-height: 1.8;
+}
+
+.btn-outline-danger {
+  border-color: #fa8072;
+  color: #fa8072;
+}
+
+.btn-outline-danger:hover,
+.btn-outline-danger:focus {
+  background: #fa8072;
+  border-color: #fa8072;
+  color: #fff;
+}
+
+footer {
+  background: #000;
+}
+
+@media (max-width: 991.98px) {
+  .banner-area {
+    min-height: 220px;
+  }
+
+  .product-image {
+    height: 220px;
+  }
+}
