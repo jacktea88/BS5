@@ -1,0 +1,108 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #efefef;
+  color: #666;
+}
+
+/* 導覽列那一條 */
+.wireframe-nav {
+  background: #c8917f;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.42);
+}
+
+.pill-link {
+  background: rgba(255, 255, 255, 0.22);
+  color: #fff;
+  border-radius: 0.15rem;
+  padding: 0.35rem 0.8rem;
+}
+
+.pill-link:hover,
+.pill-link:focus,
+.pill-link.active {
+  background: rgba(255, 255, 255, 0.36);
+  color: #fff;
+}
+
+/* 上方 banner 區 */
+.banner-area {
+  min-height: 30vh;
+  background: #f5f5f5;
+  border-top: 4px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 4px solid rgba(0, 0, 0, 0.08);
+}
+
+/* 每個區塊中間的提示字 */
+.section-label {
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  color: #8a8a8a;
+}
+
+/* 主要內容的大外框 */
+.wireframe-block {
+  background: #d39b87;
+  border-radius: 0.2rem;
+}
+
+/* 內層左右欄位 */
+.frame-panel {
+  background: #9eb4c8;
+  border-radius: 0.2rem;
+}
+
+/* 裡面那幾個深色小區塊 */
+.mock-box {
+  background: #5d5d5d;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.12rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-box {
+  width: min(100%, 18rem);
+  padding: 0.45rem 0.75rem;
+  margin-bottom: 0.7rem;
+}
+
+.text-box {
+  width: min(100%, 16rem);
+  padding: 0.45rem 0.75rem;
+  margin-bottom: 0.7rem;
+}
+
+/* 圖片位置 */
+.image-frame {
+  width: 100%;
+  max-width: 26rem;
+  height: 16rem;
+  object-fit: cover;
+  background: #333;
+  border-radius: 0.12rem;
+}
+
+/* 最下面 footer */
+.footer-area {
+  background: #efefef;
+  border-top: 4px solid rgba(0, 0, 0, 0.08);
+  color: #8a8a8a;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 991.98px) {
+  .banner-area {
+    min-height: 20vh;
+  }
+
+  .image-frame {
+    height: 12rem;
+  }
+}
